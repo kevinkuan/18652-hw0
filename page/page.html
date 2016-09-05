@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Chat Client</title>
+    <style type="text/css">
+      body { font: 12px Arial; 
+             background-color: #ADD8E6;
+             border: 5px solid black;}
+      form { background: #ADD8E6; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 0; padding: 5px; width: 100%; }
+      form #button { color:#F00; background: #d8d8d8; width: 100%; }
+      #connected {border: 1px solid#000;}
+    </style>
+    <script src="/chat.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <ul id="content" class="connected"></ul>
+    <form class="controls">Name: 
+      <input id="name" style="width:100%"><br>Message: 
+      <input id="textField" style="width:100%">
+      <input id="send" type="button" value="send">
+    </form>
+  </body>
+</html>
